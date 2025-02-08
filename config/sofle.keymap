@@ -75,7 +75,9 @@
                         &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &mo 2   &kp SPACE     &kp ENTER         &mo 1   &kp C_MENU  &kp LALT   &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         raise_layer {
